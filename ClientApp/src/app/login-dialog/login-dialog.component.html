@@ -1,0 +1,12 @@
+<div class="formLog">
+    <form #LogDialog="ngForm" (ngSubmit)="submit(LogDialog.value.login, LogDialog.value.password)">
+        <h2>Войти</h2>
+        <input type="text" ngModel name="login" id="login" placeholder="Логин" />
+        <input type="password" ngModel name="password" id="password" placeholder="Пароль" />
+        <div class="buttons">
+            <button class="Log">Войти</button>
+            <button class="Cancel" mat-dialog-close>Отмена</button>
+        </div>
+        <button [mat-dialog-close]="'noAccount'">У меня еще нет аккаунта</button>
+    </form>
+</div>

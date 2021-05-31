@@ -1,0 +1,16 @@
+<div class="recipes">
+  <div class="add_recipes">
+    <h2 class="recipes_titile">Рецепты</h2>
+  <button routerLink="/recipes/add" class="button button_recipe">Добавить рецепт</button>
+  </div>
+  <div class="meal_search">
+    <h2>Поиск рецепта</h2>
+    <app-recipe-search></app-recipe-search>
+  </div>
+  <div class="recipe_card">
+    <app-recipe-card *ngFor="let recipe of recipesCards" image="{{recipe.image}}" alt="{{recipe.alt}}" title="{{recipe.title}}" text="{{recipe.text}}" cookingTime="{{recipe.cookingTime}}" peopleCount="{{recipe.peopleCount}}" tag1="{{recipe.tag1}}" tag2="{{recipe.tag2}}" tag3="{{recipe.tag3}}" starNumbers="{{recipe.starNumbers}}" likeNumbers="{{recipe.likeNumbers}}"></app-recipe-card>
+  </div>
+  <div class="recipe_download" >
+    <button class="recipe_button">Загрузить еще</button>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="align">
+    <div class="slogan">
+        <div class="slogan_content">
+            <span class="slogan_content_title"> Готовь и делись рецептами </span>
+            <span class="slogan_content_statement">
+                Никаких кулинарных книг и блокнотов! Храни все любимые рецепты в одном месте.
+            </span>
+            <div class="slogan_buttons">
+                <a routerLink="/recipes/add" class="button button_recipe"> Добавить рецепт </a>
+                <a href="#" class="button button_login"> Войти </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Sort_by_tags">
+        <h2>Умная сортировка по тегам</h2>
+        <p>Добавляй рецепты и указывай наиболее популярные теги.
+            Это позволит быстро находить любые категории.
+        </p>
+        <div class="category_card_block">
+            <app-category-card *ngFor="let category of categoryCards" icon="{{category.icon}}" title="{{category.title}}" text="{{category.text}}" alt="{{category.alt}}"></app-category-card>
+        </div>
+    </div>
+    
+    <div class="recipe_search">
+        <h2 class="recipe_search_title">Поиск рецептов</h2>
+        <p class="recipe_search_text">Введите примерное название блюда, а мы по тегам найдем его</p>
+        <app-recipe-search></app-recipe-search>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="day_recipe">
+    <div class="day_recipe_content">
+        <span class="day_recipe_like">356</span>
+        <span class="day_recipe_title"> Тыквенный супчик<br />на кокосовом молоке </span>
+        <span class="day_recipe_text">
+            Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный, согревающий
+            суп-пюре на кокосовом молоке. Можно даже в Пост!
+        </span>
+    </div>
+    <a href="#" class="day_recipe_user">123</a>
+</div> -->

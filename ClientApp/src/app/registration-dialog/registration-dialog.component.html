@@ -1,0 +1,25 @@
+<div class="formReg">
+    <form
+        #RegDialog="ngForm"
+        (ngSubmit)="submit(RegDialog.value.name, RegDialog.value.login, RegDialog.value.password)"
+    >
+        <h2>Регистрация</h2>
+        <input type="text" ngModel name="name" id="name" placeholder="Имя" />
+        <input type="text" ngModel name="login" id="login" placeholder="Логин" />
+        <div class="password">
+            <input type="password" ngModel name="password" id="password" placeholder="Пароль" />
+            <input
+                type="password"
+                ngModel
+                name="repeatedPassword"
+                id="repeatedPassword"
+                placeholder="Повторите пароль"
+            />
+        </div>
+        <div class="buttons">
+            <button class="Reg">Зарегистрироваться</button>
+            <button class="Cancel" mat-dialog-close>Отмена</button>
+        </div>
+        <button [mat-dialog-close]="'AccountExist'">У меня уже есть аккаунт</button>
+    </form>
+</div>

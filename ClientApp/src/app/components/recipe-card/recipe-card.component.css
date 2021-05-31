@@ -1,0 +1,123 @@
+.recipes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    box-shadow: 0 16px 72px rgba(34, 39, 47, 0.05);
+    border-radius: 72px;
+}
+
+.recipes:hover {
+    border-radius: 72px;
+    box-shadow: 0 0 20px 4px #e2e2e2;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.recipe_description {
+    width: 717px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 53px;
+}
+
+.tags_buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.tags {
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tag {
+    height: 23px;
+    background: rgba(253, 177, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #f29e1f;
+    padding: 0 7%;
+    margin-right: 3%;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 33.1%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 46.7%;
+    height: 50px;
+    border: 1px solid #fdb100;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.recipe_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.recope_text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.information {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.information span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.information p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.time {
+  width: 307px;
+  height: 57px;
+}
+
+.recipe_details {
+  margin-left: 20px;
+}
+
+.time, .persons {
+  display: flex;
+}

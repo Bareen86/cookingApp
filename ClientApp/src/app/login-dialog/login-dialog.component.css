@@ -1,0 +1,57 @@
+.formLog {
+    width: 700px;
+}
+
+form {
+    width: 580px;
+    margin: 0px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 20px 0;
+    padding-left: 5%;
+    font-size: 16px;
+    font-family: Montserrat;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Log {
+    background-color: #fdb100;
+    border-width: 0px;
+    color: #ffffff;
+    font-weight: semibold;
+}
+
+.Cancel {
+    background-color: #ffffff;
+    border-color: #fdb100;
+    border-width: 2px;
+}
+
+.Log,
+.Cancel {
+    width: 278px;
+    height: 60px;
+    border-radius: 16px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.idk {
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}

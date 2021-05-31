@@ -1,0 +1,72 @@
+.search_meal_component {
+    display: flex;
+    margin-bottom: 24px;
+    font-size: 22px;
+    width: 947px;
+    /* Как сделать с % ширину */
+}
+
+.search_meal_component input {
+    width: 779px;
+    height: 15px;
+    padding: 28px 0px 28px 32px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+    box-shadow: 0px 8px 42px rgba(34, 39, 47, 0.04);
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.search_meal {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 73px;
+    width: 152px;
+    background: #fdb100;
+    color: #fff;
+    border-radius: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    margin-left: 16px;  
+}
+
+.tags
+{
+    width: 280px;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    margin: 10px 0 90px 0px;
+}
+
+.tag:hover
+{
+    color: black;
+}
+
+.tag
+{
+    height: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #808080;
+    border: none;
+    text-decoration: none;
+}

@@ -1,0 +1,45 @@
+<div class="recipes">
+  <div class="images">
+    <img src="../../../assets/images/{{image}}.svg" alt="{{alt}}">
+  </div>
+  <div class="recipe_description">
+    <div class="tags_buttons">
+      <div class="tags">
+        <span class="tag">{{tag1}}</span>
+        <span class="tag">{{tag2}}</span>
+        <span class="tag">{{tag3}}</span>
+      </div>
+      <div class="buttons">
+        <button (click)="isStar()">
+          <img class="button" *ngIf="chooseFavourite" src="../../../assets/icons/star.svg" alt="star">
+          <img class="button" *ngIf="!chooseFavourite" src="../../../assets/icons/activeStar.svg" alt="star">
+          <span class="star_numbers">{{starNumbers}}</span>
+        </button>
+        <button (click)="isLike()">
+          <img class="button" *ngIf="pressLike" src="../../../assets/icons/like.svg" alt="like">
+          <img class="button" *ngIf="!pressLike" src="../../../assets/icons/activeLike.svg" alt="like">
+          <span class="like_numbers">{{likeNumbers}}</span>
+        </button>
+      </div>
+    </div>
+    <h2 class="recipe_title">{{title}}</h2>
+    <p class="recope_text">{{text}}</p>
+    <div class="information">
+      <div class="time">
+        <img src="../../../assets/icons/clock.svg" alt="clockImage">
+        <div class="recipe_details">
+          <span>Время приготовления:</span>
+        <p>{{cookingTime}}</p>
+        </div>
+      </div>
+      <div class="persons">
+        <img src="../../../assets/icons/persons.svg" alt="personImage">
+        <div class="recipe_details">
+          <span>Рецепт на :</span>
+          <p>{{peopleCount}}</p>
+        </div> 
+      </div>
+    </div> 
+  </div>      
+</div>
+

@@ -1,0 +1,14 @@
+{
+  // Editor
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.rulers": [120],
+  "editor.tabSize": 4,
+  // Files
+  "files.exclude": {
+    "node_modules": true,
+  }
+}

@@ -1,0 +1,40 @@
+img {
+    width: auto;
+    padding: 13px 14px;
+    border-radius: 12px;
+    background-color: #ffefcc;
+}
+
+.category {
+    width: 230px;
+    min-height: auto;
+    box-shadow: 0px 16px 72px rgba(34, 39, 47, 0.05);
+    border-radius: 24px;
+    padding: 24px 24px 0 24px;
+    height: 100%;
+}
+
+.category:hover
+{
+    box-shadow: 0 0 20px 4px #e2e2e2;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.h2 {
+  font-family: Montserrat;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 30px;
+  line-height: 103%;
+}
+
+p {
+  font-family: Montserrat;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 30px;
+  line-height: 137%;
+  word-spacing: normal;
+}
+

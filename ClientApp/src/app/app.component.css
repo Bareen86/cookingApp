@@ -1,0 +1,51 @@
+h2
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.content {
+    width: 580px;
+    margin: 0 60px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content p {
+    font-size: 18px;
+    font-family: Montserrat;
+    color: #4a525a;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-family: Montserrat;
+}
+
+.Log {
+    background-color: #fdb100;
+    border-width: 0px;
+    color: #ffffff;
+    font-weight: semibold;
+}
+
+.Registration {
+    background-color: #ffffff;
+    border-color: #fdb100;
+    border-width: 2px;
+}
+
+.Log,
+.Registration {
+    width: 278px;
+    height: 60px;
+    border-radius: 16px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}

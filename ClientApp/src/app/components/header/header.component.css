@@ -1,0 +1,90 @@
+.header {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    width: 83.2%;
+    height: 56px;
+    padding: 44px 8.4% 0px;
+    justify-content: space-between;
+}
+
+.pages {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    width: 43%;
+    justify-content: space-between;
+}
+
+.pages a {
+    text-decoration: none;
+}
+
+.recipes {
+    display: block;
+    width: 99px;
+    height: 29px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fdb100;
+    margin-right: 6%;
+}
+
+.header_link {
+    display: block;
+    height: 22px;
+    margin-top: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #3a3c41;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.header_link:hover {
+    font-weight: 600;
+    color: #3a3c41;
+}
+
+.header_button__main {
+    width: 76px;
+    font-weight: normal;
+    color: #9196a1;
+}
+
+.header_button__recipes {
+    width: 82px;
+    font-weight: normal;
+    color: #9196a1;
+}
+
+.header_button__favorites {
+    width: 106px;
+    font-weight: normal;
+    color: #9196a1;
+}
+
+.header_button__enter::before {
+    content: url('../../../assets/icons/login-icon.svg');
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: -8px;
+    left: -47px;
+}
+
+.header_button__enter {
+    position: relative;
+    width: 60px;
+    font-weight: 600;
+    color: #fdb100;
+    margin-right: 0.4%;
+}

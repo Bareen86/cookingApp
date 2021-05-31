@@ -1,0 +1,74 @@
+<div class="add">
+  <div class="back">
+    <a routerLink="/recipes" class="arrow_back" >Назад</a>
+  </div>
+  <div class="add_new_recipe">
+    <div class="picture_description">
+      <div class="recipe_description">
+        <input name="file" type="file" name="file" id="input__file" class="hide" multiple>
+        <label for="input__file" class="download_img">
+        </label>
+      </div>
+      <div class="description">
+        <input class="recipe_title" placeholder="Название рецепта" type="text">
+        <input class="recipe_description_text" placeholder="Краткое описание рецепта(150 символов)" type="text">
+        <input class="add_tags" placeholder="Добавить теги" type="text">
+        <div class="selectors">
+          <div class="select_minutes">
+            <select name="minutes" id="minutes" class="minutes_select">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+            </select>
+            <p class="select_text">
+  
+            </p>
+          </div>
+          <div class="select_people">
+            <select name="minutes"  id="minutes" class="people_select">
+              <option value="France">10</option>
+              <option value="Spain">20</option>
+              <option value="USA">30</option>
+              <option value="Italy">40</option>
+              <option value="Turkey">50</option>
+              <option value="Mexico">60</option>
+            </select>
+            <p class="select_text">
+  
+            </p>    
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="add_ingredientAndSteps">
+      <div class="add_title">
+        <h2>Ингридиенты</h2>
+        <div class="task" *ngFor="let task of ingredientList; let i = index">      
+          <div>
+            <span class="title">Task number: </span>
+            <span>{{task.index}}</span>
+            <span class="remove">
+              <button (click)='removeIngredient(task.index)'> X</button>
+            </span>
+          </div>
+          <div>
+            <span class="title"> Title:</span>
+            <input [(ngModel)]="task.title" type="text">
+          </div>
+          <div> 
+            <span class="title"> Description:</span>
+            <input [(ngModel)]="task.description" type="text">
+          </div>
+        </div>
+        <div>
+          <button class="button add_title_button" (click)="addIngredient()">Add Task</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

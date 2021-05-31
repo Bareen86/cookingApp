@@ -1,0 +1,138 @@
+.recipes {
+    margin: 60px 8.4% 40px 8.4%;
+}
+
+.add_recipes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.add_recipes h2 {
+    margin-top: 3 px;
+    font-family: Montserrat;
+    font-style: Bold;
+    font-size: 42px;
+    line-height: 62px;
+    line-height: 121%;
+    word-spacing: normal;
+}
+
+.button {
+    display: flex;
+    height: 60px;
+    border-radius: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.button_recipe:hover {
+    border: 1px solid #fdb100;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #fdb100;
+}
+
+.button_recipe:hover:before {
+    color: #fdb100;
+    top: 16px;
+    left: 13.9%;
+}
+
+.button_recipe::before {
+    content: '+';
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    position: absolute;
+    top: 17px;
+    left: 14%;
+}
+
+.button_recipe {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 82px;
+    padding-right: 42px;
+    background: #fdb100;
+    color: #fff;
+    border: none;
+    position: relative;
+}
+
+.recipe_card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.meal_search {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal_search h2 {
+    margin-top: 23px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.recipe_search_title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+}
+
+.star_numbers,
+.like_numbers {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.recipe_download {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe_button
+{
+    margin: 65px auto 65px;
+    height: 60px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    width: 26%;
+    border: 1px solid #FDB100;
+    box-sizing: border-box;
+    background-color: #FFF;
+    color: #FDB100;
+    justify-content: center;
+}
+
+.recipe_button:hover
+{
+    background: #FDB100;
+    color: #FFF;
+    border: none;
+    transition: 500ms;
+}
