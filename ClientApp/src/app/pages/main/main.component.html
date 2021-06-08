@@ -11,31 +11,27 @@
             </div>
         </div>
     </div>
-    
+
     <div class="Sort_by_tags">
         <h2>Умная сортировка по тегам</h2>
-        <p>Добавляй рецепты и указывай наиболее популярные теги.
-            Это позволит быстро находить любые категории.
-        </p>
+        <p>Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро находить любые категории.</p>
         <div class="category_card_block">
-            <app-category-card *ngFor="let category of categoryCards" icon="{{category.icon}}" title="{{category.title}}" text="{{category.text}}" alt="{{category.alt}}"></app-category-card>
+            <app-category-card
+                *ngFor="let category of categoryCards"
+                icon="{{ category.icon }}"
+                title="{{ category.title }}"
+                text="{{ category.text }}"
+                alt="{{ category.alt }}"
+            ></app-category-card>
         </div>
     </div>
-    
+
     <div class="recipe_search">
         <h2 class="recipe_search_title">Поиск рецептов</h2>
         <p class="recipe_search_text">Введите примерное название блюда, а мы по тегам найдем его</p>
         <app-recipe-search></app-recipe-search>
     </div>
-    
 </div>
-
-
-
-
-
-
-
 
 <!-- <div class="day_recipe">
     <div class="day_recipe_content">
